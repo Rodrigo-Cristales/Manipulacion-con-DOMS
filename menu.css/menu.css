@@ -1,0 +1,192 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+/* Estos son algunos globales */
+.centrar-texto{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* Estilos de la pagina principal */
+@media (min-width: 768px ){
+    header {
+        background-color: #222;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+    nav ul li {
+        display: block;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 768px ){
+    header {
+        background-color: #222;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+    nav ul li {
+        display: block;
+        margin-right: 20px;
+    }
+}
+h2 {
+    color: #ff0044; 
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    color: #00ffcc; 
+    text-decoration: none;
+}
+
+button {
+    background-color: #ff0055; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #00ffcc; 
+}
+
+@media (min-width: 768px) {
+    .contenido {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    img{
+        width: 30rem;
+    }
+    footer {
+        background-color:#222; 
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        margin-top: 10rem;
+    }
+}
+
+@media (max-width: 768px ){
+    .contenido {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    img{
+        width: 100%;
+    }
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    footer {
+        background-color:#222; 
+        color: #fff;
+        padding: 10px;
+        margin-top: 2rem;
+    }
+}
+span{
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+p{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* CSS DE LA SEGUNDA PAGINA DE COMPRAS 1 */
+form{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 4px 20px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+    margin-top: 30px;
+    padding: 2rem;
+}
+
+input{
+    display: block;
+    width: 100%;
+    height: 2rem;
+    margin: 10px auto;
+    border: none;
+    border-left: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+
+label{
+    font-weight: bold;
+}
+
+.contenido_grid{
+    display: grid;
+    grid-template-columns: 40% 50%;
+    gap: 10rem;
+    margin-top: 2rem;
+}
+
+input::placeholder{
+    font-size: 15px;
+}
+input:hover{
+    background-color:azure;
+}
+
+.h2_compra_video_juego{
+    margin-top: 3rem;
+}
+
+.cerrar{
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .contenido_grid{
+        display: block; 
+    }
+    form{
+        width: 70%;
+        margin: 30 auto;
+    }
+    .cerrar{
+        margin-left: auto;
+        font-size: 2rem;
+        display: block;
+        text-align: right;
+        margin-right: 10px;
+    }
+    .modificador--button{
+        width: 100%;
+        text-align: center;
+        margin-right: 10rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .cerrar {
+        margin-left: 37rem;
+    }
+    input{
+        width: 100%;
+    }
+}

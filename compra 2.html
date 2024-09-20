@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css/menu.css">
+
+    <title>Document</title>
+
+</head>
+<body>
+    <!--Encabezado-->
+    <header>
+        <h1>Tienda Retro de Video Juegos</h1>
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="index.html">Tienda</a></li>
+            <li><a href="#">Catalogo</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    </header>
+    <!--Contenido-->
+    <main>
+        <h2 class="centrar-texto h2_compra_video_juego">COMPRAR VIDEO JUEGO</h2>
+        <section class="contenido_grid">
+            <article>
+                <form action="">
+                <a href="index.html"><span class="cerrar">X</span></a> 
+                    <br>
+                    <label for="">Ingrese su Nombre</label>
+                    <input type="text" placeholder="Ingrese su nombres" id="Nombre_Usuario">
+                    <label for="text">Ingrese sus apellidos</label>
+                    <input type="text" placeholder="Ingrese su apellidos" id="Apellidos_Usuario">
+                    <label for="">Copias a comprar</label>
+                    <input type="number" placeholder="ingrese la cantudad a comprar" id="Cantidad_de_Juegos">
+                    <button onclick="calcularVenta('Super Mario bros 2')" class="button_comprar modificador--button">Comprar</button>
+                </form>
+            </article>
+            <article>
+                <h3>SUPER MARIO BROS 2</h3>
+                <img class="imgen_modificador" src="img/supermario2.jpg" alt="super marios bros 1">
+                <p><span>Precio:</span>35.00$</p>
+                
+            </article>
+        </section>
+    </main>
+    <script src="JavaS.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Tienda Retro de Video Juegos</p>
+    </footer>
+</body>
+</html>
